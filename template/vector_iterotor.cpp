@@ -176,7 +176,11 @@ int main() {
     for(; it != vec.end(); ++it)
         std::cout << *it << " ";
     std::cout << std::endl;
-
+    /// for each底层原理为迭代器
+    for (int val : vec) {
+        std::cout << val << " ";
+    }
+    std::cout << std::endl;
     return 0;
 }
 
