@@ -166,6 +166,12 @@ int main() {
     {
         vec.push_back(rand() % 100 + 1 );
     }
+    
+    int size = vec.size();
+    for (int i = 0; i < size; ++i)
+        std::cout << vec[i] << " ";
+    std::cout << std::endl;
+     
     vector<int>:: iterator it = vec.begin();
     for(; it != vec.end(); ++it)
         std::cout << *it << " ";
